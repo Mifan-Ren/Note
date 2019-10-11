@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # SQLite Opcode Classification
 
 *SQLite目前的opcode共有167个[^1]，以下分类整理为个人思路，部分可以通过名称理解的未作标注，opcode作用来自官网文档、代码注释翻译及个人理解*
@@ -211,7 +211,7 @@
 [^4 ]:[https://www.sqlite.org/fileformat2.html#record_format] 有效负载的格式，表格式中定义
 [^5 ]:用于临时表打开，Btree涉及位掩码，不需要对外存读写
 [^6 ]: 配合next
-[^7 ]:Virtual table，是一种自定义的扩展，允许用户通过代码定制表的数据结构和数据内容表中的数据的来源；对于普通表，来源于数据库的行列值；而对于虚表，来源于用户自定义的函数，可以使数据库中的数据，也可以使其他的外部数据，如：磁盘文件(csv, excel)[https://www.sqlite.org/vtab.html]
+[^7 ]:Virtual table，是一种自定义的扩展，允许用户通过代码定制表的数据结构和数据内容表中的数据的来源；对于普通表，来源于数据库的行列值；而对于虚表，来源于用户自定义的函数，可以使数据库中的数据，也可以使其他的外部数据，如：磁盘文件(csv, excel)(https://www.sqlite.org/vtab.html)
 
 ### 数据类型相关
 * **Affinity**：列亲和性的确定
@@ -300,22 +300,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-# SQLite Opcode classification 
-## 
->>>>>>> 469b57777f9bae16b3e89bea17f27e4b895b1a08
