@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQLite Opcode Classification
 
 *SQLite目前的opcode共有167个[^1]，以下分类整理为个人思路，部分可以通过名称理解的未作标注，opcode作用来自官网文档、代码注释翻译及个人理解*
@@ -314,3 +315,7 @@
 
 
 
+=======
+# SQLite Opcode classification 
+## 
+>>>>>>> 469b57777f9bae16b3e89bea17f27e4b895b1a08
