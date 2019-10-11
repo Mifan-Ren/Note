@@ -205,12 +205,12 @@
 
 * **VNext**： 将虚拟表P1前进到其结果集中的下一行并跳转到指令P2
 
-* **VOpen / VUpdate / VRename **：       P4是指向虚拟表对象的指针，即sqlite3_vtab结构
+* **VOpen / VUpdate / VRename**：P4是指向虚拟表对象的指针，即sqlite3_vtab结构
 
 [^3 ]:涉及Btree读取
 [^4 ]:[https://www.sqlite.org/fileformat2.html#record_format] 有效负载的格式，表格式中定义
 [^5 ]:用于临时表打开，Btree涉及位掩码，不需要对外存读写
-[^6 ]: 配合next
+[^6 ]:配合next
 [^7 ]:Virtual table，是一种自定义的扩展，允许用户通过代码定制表的数据结构和数据内容表中的数据的来源；对于普通表，来源于数据库的行列值；而对于虚表，来源于用户自定义的函数，可以使数据库中的数据，也可以使其他的外部数据，如：磁盘文件(csv, excel)(https://www.sqlite.org/vtab.html)
 
 ### 数据类型相关
