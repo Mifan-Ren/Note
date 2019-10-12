@@ -29,7 +29,7 @@
 
 * **Compare**: 比较reg（P1）..reg（P1 + P3-1）（调用此向量“A”）和reg（P2）..reg（P2 + P3-1）（“B”）中寄存器的两个向量。保存比较结果以供下一个Jump指令使用，为排序比较
 
-* **Divide / Multiply / Subtract **： P3 = P2 /*- P1
+* **Divide / Multiply / Subtract **： P3 = P2 //*- P1
 
 * **ElseNotEq**: 紧跟在Lt或Gt比较运算符之后。如果对相同的两个操作数进行Eq比较的结果将为NULL或false（0），则跳转到P2。如果两个先前操作数的Eq比较结果为真（1），则通过
 
