@@ -20,12 +20,23 @@
 ### 运算与逻辑运算类
 
 * **Add**: p1+p2 --> p3
+
 * **AddImm**: p2是常数，结果为整数
+
 * **And / or**：p1&p2 --> p3; p1 | p2 --> p3
+
 * **Bitand / Bitor / Bitnot**: 按位与或非，存到p2
+
 * **Compare**: 比较reg（P1）..reg（P1 + P3-1）（调用此向量“A”）和reg（P2）..reg（P2 + P3-1）（“B”）中寄存器的两个向量。保存比较结果以供下一个Jump指令使用，为排序比较
+  <<<<<<< HEAD
+
 * **Divide / Multiply / Subtract **： P3 = P2 / x - P1
+=======
+
+* **Divide / Multiply / Subtract **： P3 = P2 //*- P1
+
 * **ElseNotEq**: 紧跟在Lt或Gt比较运算符之后。如果对相同的两个操作数进行Eq比较的结果将为NULL或false（0），则跳转到P2。如果两个先前操作数的Eq比较结果为真（1），则通过
+
 * **Eq / Ge / Le / Lt / Ne**: 比较寄存器P1和P3中的值。如果reg（P3）== reg（P1），则跳转到地址P2
 * **IsTrue**: 此操作码实现IS TRUE，IS FALSE，IS NOT TRUE和IS NOT FALSE运算符,将寄存器P1中的值解释为布尔值。将布尔值(0或1)存储在寄存器P2中。或者，如果寄存器P1中的值为NULL，则P3将存储在寄存器P2中。如果P4 = 1，求倒数
 * **OffsetLimit**: 该操作码执行与LIMIT和OFFSET过程相关的常用计算
