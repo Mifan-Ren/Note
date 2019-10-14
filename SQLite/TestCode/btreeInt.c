@@ -713,11 +713,11 @@ struct IntegrityCk {
 /*
 **  Define some global variables to test 20190924
 */
-extern int testArray[100];  /* data array */
-extern char *testString;
-extern int t_cursor;    /* cursor  in [0, 99]*/
-extern int t_inTrans;   /* when begin a trans, set 1*/
-extern int testFlag;    /* for BtreeCursorHintFlags() */
+int testArray[100];  /* data array */
+char *testString;
+int t_cursor;    /* cursor  in [0, 99]*/
+int t_inTrans;   /* when begin a trans, set 1*/
+int testFlag;    /* for BtreeCursorHintFlags() */
 
  
 
